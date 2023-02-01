@@ -1,20 +1,8 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import React from "react";
 
-const useStyles = makeStyles({
-    loading: {
-    position: 'fixed',  
-    top: "40%",
-    left: "50%",
-    transform: "translate(-50%, -50%)"
+import CircularProgress from "@mui/material/CircularProgress";
 
-    }
-  });   
 const Loading = () => {
-    const classes = useStyles();
-    return (
-        <CircularProgress className={classes.loading} />
-    )
+  return <CircularProgress />;
 };
 export default Loading;
